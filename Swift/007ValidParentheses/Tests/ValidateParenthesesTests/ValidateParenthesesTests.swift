@@ -1,15 +1,24 @@
-import XCTest
 @testable import ValidateParentheses
+import XCTest
 
 final class ValidateParenthesesTests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(ValidateParentheses().text, "Hello, World!")
-    }
+	var sut: ValidateParentheses!
 
-    static var allTests = [
-        ("testExample", testExample),
-    ]
+	override func setUp() {
+		super.setUp()
+		sut = ValidateParentheses()
+	}
+
+	override func tearDown() {
+		sut = nil
+		super.tearDown()
+	}
+
+	func testExample() {
+		XCTAssertEqual(sut.isValid("{}()"), true)
+	}
+
+	static var allTests = [
+		("testExample", testExample),
+	]
 }
