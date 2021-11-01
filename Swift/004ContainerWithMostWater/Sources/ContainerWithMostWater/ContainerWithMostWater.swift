@@ -1,7 +1,7 @@
 import Foundation
 
 class ContainerWithMostWater {
-  func maxArea(_ heights: [ Int ]) -> Int {
+  func maxArea(_ heights: [Int]) -> Int {
     var left = 0
     var right = heights.count - 1
     var maxArea = 0
@@ -16,4 +16,3 @@ class ContainerWithMostWater {
     return maxArea
   }
 }
-

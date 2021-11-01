@@ -1,5 +1,5 @@
-import XCTest
 @testable import SumOfTwoIntegers
+import XCTest
 
 final class SumOfTwoIntegersTests: XCTestCase {
   var sut: SumOfTwoIntegers!
@@ -37,6 +37,7 @@ final class SumOfTwoIntegersTests: XCTestCase {
     var b = 2
     XCTAssertEqual(sut.getSum(&a, &b), 3)
   }
+
   static var allTests = [
     ("testSumOfTwo_whenAIsZero_shouldReturnB", testSumOfTwo_whenAIsZero_shouldReturnB),
     ("testSumOfTwo_whenBIsZero_shouldReturnA", testSumOfTwo_whenBIsZero_shouldReturnA),

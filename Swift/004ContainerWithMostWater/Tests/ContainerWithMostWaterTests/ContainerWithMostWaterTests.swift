@@ -1,5 +1,5 @@
-import XCTest
 @testable import ContainerWithMostWater
+import XCTest
 
 final class ContainerWithMostWaterTests: XCTestCase {
   var sut: ContainerWithMostWater!
@@ -19,11 +19,11 @@ final class ContainerWithMostWaterTests: XCTestCase {
   }
 
   func testMaxArea() {
-    XCTAssertEqual(sut.maxArea([1,8,6,2,5,4,8,3,7]), 49)
+    XCTAssertEqual(sut.maxArea([1, 8, 6, 2, 5, 4, 8, 3, 7]), 49)
   }
 
   static var allTests = [
     ("testExample", testExample),
-    ("testMaxArea", testMaxArea)
+    ("testMaxArea", testMaxArea),
   ]
 }

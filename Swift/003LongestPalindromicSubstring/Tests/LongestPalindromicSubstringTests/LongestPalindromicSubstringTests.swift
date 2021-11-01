@@ -25,9 +25,10 @@ final class LongestPalindromicSubstringTests: XCTestCase {
   func testLongestPalindrome_whenLengthIsOkay_lengthOfTheExpectedPalindromeIsEven_shouldReturnIt() {
     XCTAssertEqual(sut.longestPalindrome("cbbd"), "bb")
   }
+
   static var allTests = [
     ("testLongestPalindrome_whenLengthOfStringIsLessThanTwo_shouldReturnTheString", testLongestPalindrome_whenLengthOfStringIsLessThanTwo_shouldReturnTheString),
     ("testLongestPalindrome_whenLengthIsOkay_lengthOfTheExpectedPalindromeIsOdd_shouldReturnIt", testLongestPalindrome_whenLengthIsOkay_lengthOfTheExpectedPalindromeIsOdd_shouldReturnIt),
-    ("testLongestPalindrome_whenLengthIsOkay_lengthOfTheExpectedPalindromeIsEven_shouldReturnIt", testLongestPalindrome_whenLengthIsOkay_lengthOfTheExpectedPalindromeIsEven_shouldReturnIt)
+    ("testLongestPalindrome_whenLengthIsOkay_lengthOfTheExpectedPalindromeIsEven_shouldReturnIt", testLongestPalindrome_whenLengthIsOkay_lengthOfTheExpectedPalindromeIsEven_shouldReturnIt),
   ]
 }
