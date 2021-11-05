@@ -2,14 +2,23 @@
 import XCTest
 
 final class BestTimeToBuyAndSellStockTests: XCTestCase {
-  func testExample() {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct
-    // results.
-    XCTAssertEqual(BestTimeToBuyAndSellStock().text, "Hello, World!")
+  var sut: BestTimeToBuyAndSellStock!
+
+  override func setUp() {
+    super.setUp()
+    sut = BestTimeToBuyAndSellStock()
+  }
+
+  override func tearDown() {
+    sut = nil
+    super.tearDown()
+  }
+
+  func testExample1() {
+    XCTAssertEqual(sut.maxProfit([]), 0)
   }
 
   static var allTests = [
-    ("testExample", testExample),
+    ("testExample1", testExample1),
   ]
 }
