@@ -2,14 +2,23 @@
 import XCTest
 
 final class ReorderListTests: XCTestCase {
-  func testExample() {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct
-    // results.
-    XCTAssertEqual(ReorderList().text, "Hello, World!")
-  }
+	var sut: ReorderList!
 
-  static var allTests = [
-    ("testExample", testExample),
-  ]
+	override func setUp() {
+		super.setUp()
+		sut = ReorderList()
+	}
+
+	override func tearDown() {
+		sut = nil
+		super.tearDown()
+	}
+
+	// func testExample() {
+	//   XCTAssertEqual(sut.reorderList(nil))
+	// }
+
+	static var allTests = [
+		// ("testExample", testExample),
+	]
 }
