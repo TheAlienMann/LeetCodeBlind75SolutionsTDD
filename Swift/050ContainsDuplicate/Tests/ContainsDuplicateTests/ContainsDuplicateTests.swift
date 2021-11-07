@@ -2,14 +2,23 @@
 import XCTest
 
 final class ContainsDuplicateTests: XCTestCase {
-  func testExample() {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct
-    // results.
-    XCTAssertEqual(ContainsDuplicate().text, "Hello, World!")
-  }
+	var sut: ContainsDuplicate!
 
-  static var allTests = [
-    ("testExample", testExample),
-  ]
+	override func setUp() {
+		super.setUp()
+		sut = ContainsDuplicate()
+	}
+
+	override func tearDown() {
+		sut = nil
+		super.tearDown()
+	}
+
+	func testExample() {
+		XCTAssertEqual(sut.containsDuplicate([1, 1, 2, 2, 3, 4]), true)
+	}
+
+	static var allTests = [
+		("testExample", testExample),
+	]
 }

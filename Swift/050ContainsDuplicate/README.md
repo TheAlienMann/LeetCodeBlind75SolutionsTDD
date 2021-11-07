@@ -1,3 +1,3 @@
-# ContainsDuplicate
+# Contains Duplicate
 
-A description of this package.
+The challenge is [here](https://leetcode.com/problems/contains-duplicate/)
