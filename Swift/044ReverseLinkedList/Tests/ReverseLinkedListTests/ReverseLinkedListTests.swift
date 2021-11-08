@@ -1,15 +1,33 @@
-import XCTest
 @testable import ReverseLinkedList
+import XCTest
 
 final class ReverseLinkedListTests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(ReverseLinkedList().text, "Hello, World!")
-    }
-
-    static var allTests = [
-        ("testExample", testExample),
-    ]
+  var sut: ReverseLinkedList!
+  
+  override func setUp() {
+    super.setUp()
+    sut = ReverseLinkedList()
+  }
+  
+  override func tearDown() {
+    sut = nil
+    super.tearDown()
+  }
+  
+  func testExample1() {
+    let head: LinkedList = [1, 3, 4, 2]
+    let reversed: LinkedList = [2, 4, 3, 1]
+    XCTAssertEqual(sut.reverseList(head.head), reversed.head)
+  }
+  
+  func testExample2() {
+    let head: LinkedList = [1, 2, 3, 4]
+    let reserved: LinkedList = [4, 3, 2, 1]
+    XCTAssertEqual(sut.reverseList(head.head), reserved.head)
+  }
+  
+  static var allTests = [
+    ("testExample1", testExample1),
+    ("testExample2", testExample2),
+  ]
 }
