@@ -1,6 +1,4 @@
 # NumberOfOneBits
 
 
-apparently this solution is wrong, according to the LeetCode's test cases!
-
-gotta check that out again! 
+For the test cases, the input should be passed in as binaryInteger, with 0b prefix.

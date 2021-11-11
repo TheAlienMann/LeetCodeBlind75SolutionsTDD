@@ -14,11 +14,11 @@ final class NumberOfOneBitsTests: XCTestCase {
 		super.tearDown()
 	}
 
-	func testExample() {
-		XCTAssertEqual(sut.hammingWeight(00000000000000000000000000001011), 3)
+	func testExample1() {
+		XCTAssertEqual(sut.hammingWeight(0b00000000000000000000000000001011), 3)
 	}
 
 	static var allTests = [
-		("testExample", testExample),
+		("testExample1", testExample1),
 	]
 }
