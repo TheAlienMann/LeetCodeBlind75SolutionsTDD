@@ -18,7 +18,17 @@ final class ValidPalindromeTests: XCTestCase {
 		XCTAssertEqual(sut.isPalindrome("s"), true)
 	}
 
+	func testExample2() {
+		XCTAssertEqual(sut.isPalindrome("A man, a plan, a canal: Panama"), true)
+	}
+
+	func testExample3() {
+		XCTAssertEqual(sut.isPalindrome("race a car"), false)
+	}
+
 	static var allTests = [
 		("testExample", testExample),
+		("testExample2", testExample2),
+		("testExample3", testExample3),
 	]
 }
