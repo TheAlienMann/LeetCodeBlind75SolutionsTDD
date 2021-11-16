@@ -2,7 +2,7 @@ import Foundation
 
 class ValidPalindrome {
 	// func isPalindrome(_ str: String) -> Bool {
-	// 	guard str.count > 2 else { return true }
+	// 	guard str.count > 1 else { return true }
 	// 	var newStr = ""
 	// 	for char in str {
 	// 		if char.isLetter || char.isNumber {

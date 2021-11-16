@@ -18,7 +18,16 @@ final class ValidAnagramTests: XCTestCase {
 		XCTAssertEqual(sut.isAnagram("str", "strr"), false)
 	}
 
+	func testExample2() {
+		XCTAssertEqual(sut.isAnagram("anagram", "nagaram"), true)
+	}
+
+	func testExample3() {
+		XCTAssertEqual(sut.isAnagram("rat", "car"), false)
+	}
 	static var allTests = [
 		("testExample", testExample),
+		("testExample2", testExample2),
+		("testExample3", testExample3),
 	]
 }
