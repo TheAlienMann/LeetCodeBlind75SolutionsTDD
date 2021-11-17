@@ -2,5 +2,5 @@
 
 int main() {
     Validpalindrome o;
-    o.hello();
+    o.isPalindrome("gig");
 }
