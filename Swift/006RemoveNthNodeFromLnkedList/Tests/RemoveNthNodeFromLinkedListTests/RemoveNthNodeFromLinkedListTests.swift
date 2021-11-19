@@ -1,5 +1,6 @@
 @testable import RemoveNthNodeFromLinkedList
 import XCTest
+import LinkedListArray
 
 final class RemoveNthNodeFromLinkedListTests: XCTestCase {
   var sut: RemoveNthNodeFromLinkedList!
@@ -15,7 +16,13 @@ final class RemoveNthNodeFromLinkedListTests: XCTestCase {
   }
 
   func testExample() {
-    XCTAssertEqual(sut.removeNthFromEnd([1], 1), [])
+    let head: LinkedListArray.LinkedList = [1]
+    let expected: LinkedListArray.LinkedList<Int>? = []
+    XCTAssertEqual(sut.removeNthFromEnd(head.head, 1), expected?.head)
+  }
+  
+  func testExample2() {
+    
   }
 
   static var allTests = [
