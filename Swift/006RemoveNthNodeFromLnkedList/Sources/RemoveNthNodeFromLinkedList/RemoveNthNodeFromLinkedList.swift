@@ -6,10 +6,10 @@ class RemoveNthNodeFromLinkedList {
     guard head != nil else { return nil }
     let length = LinkedListArray.LinkedList<Int>().length()
     let nthMinusOneNode = LinkedListArray.LinkedList<Int>().node(at: length - n)
-    guard length - n != 0 else { return head!.next }
-    guard n != 1 else {
-      nthMinusOneNode?.next = nil
-      return head
+//    guard length - n != 0 else { return head!.next }
+    guard length - n != 0, head?.next != nil else {
+//      nthMinusOneNode?.next = nil
+      return nil
     }
     nthMinusOneNode?.next = nthMinusOneNode?.next?.next
     return head
