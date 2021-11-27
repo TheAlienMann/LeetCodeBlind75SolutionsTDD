@@ -18,7 +18,13 @@ final class GroupAnagramsTests: XCTestCase {
 		XCTAssertEqual(sut.groupAnagrams([]), [])
 	}
 
+	func testExample2() {
+		XCTAssertEqual(sut.groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]),
+		               [["bat"], ["tan", "nat"], ["eat", "tea", "ate"]])
+	}
+
 	static var allTests = [
 		("testExample", testExample),
+		("testExample2", testExample2),
 	]
 }
