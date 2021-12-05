@@ -1,3 +1,3 @@
 # SetMatrixZeroes
 
-A description of this package.
+just setting up the problem's project to solve, nothing much to say right now :/
