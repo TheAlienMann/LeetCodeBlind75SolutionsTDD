@@ -15,16 +15,17 @@ final class WordSearchTests: XCTestCase {
   }
 
   func testExample() {
-    XCTAssertEqual(sut.exist([["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], "ABCCED"), true)
+    XCTAssertEqual(sut.exist([["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]], "ABCCED"), true)
   }
 
   func testExample2() {
-    XCTAssertEqual(sut.exist([["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], "SEE"), true)
+    XCTAssertEqual(sut.exist([["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]], "SEE"), true)
   }
 
   func testExample3() {
-    XCTAssertEqual(sut.exist([["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], "ABCB"), false)
+    XCTAssertEqual(sut.exist([["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]], "ABCB"), false)
   }
+
   static var allTests = [
     ("testExample", testExample),
     ("testExample2", testExample2),
