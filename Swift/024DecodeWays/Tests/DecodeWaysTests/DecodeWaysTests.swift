@@ -16,4 +16,14 @@ final class DecodeWaysTests: XCTestCase {
   func testExample() throws {
     XCTAssertEqual(sut.numDecodings("0"), 0)
   }
+
+  func testExample2() {
+    XCTAssertEqual(sut.numDecodings("121"), 3)
+  }
+  func testExample3() {
+    XCTAssertEqual(sut.numDecodings("226"), 3)
+  }
+  func testExample4() {
+    XCTAssertEqual(sut.numDecodings("06"), 0)
+  }
 }
