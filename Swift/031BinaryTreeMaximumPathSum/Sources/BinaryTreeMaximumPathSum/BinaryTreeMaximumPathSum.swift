@@ -2,9 +2,25 @@ import Foundation
 
 class BinaryTreeMaximumPathSum {
   func maxPathSum(_ root: TreeNode?) -> Int {
-    guard root != nil else { return 0 }
+    var result = [Int]()
+    result.append(root!.val)
 
-    return 0 // for now..
+    func dfs(_ root: TreeNode?) -> Int {
+      guard let root = root else { return 0 }
+
+      var leftMax = dfs(root.left)
+      var rightMax = dfs(root.right)
+      leftMax = max(leftMax, 0)
+      rightMax = max(rightMax, 0)
+
+      result[0] = max(result[0], root.val + leftMax + rightMax)
+
+      return root.val + max(leftMax, rightMax)
+    }
+
+    dfs(root)
+
+    return result[0]
   }
 }
 
