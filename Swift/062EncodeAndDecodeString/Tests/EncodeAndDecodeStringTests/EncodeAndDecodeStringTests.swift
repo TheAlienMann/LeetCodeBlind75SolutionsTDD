@@ -1,11 +1,20 @@
-import XCTest
 @testable import EncodeAndDecodeString
+import XCTest
 
 final class EncodeAndDecodeStringTests: XCTestCase {
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(EncodeAndDecodeString().text, "Hello, World!")
-    }
+	var sut: EncodeAndDecodeString!
+
+	override func setUp() {
+		super.setUp()
+		sut = EncodeAndDecodeString()
+	}
+
+	override func tearDown() {
+		sut = nil
+		super.tearDown()
+	}
+
+	func testExample() throws {
+		XCTAssertEqual(1 + 1, 2)
+	}
 }
