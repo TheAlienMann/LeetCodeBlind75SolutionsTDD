@@ -1,11 +1,28 @@
-import XCTest
 @testable import TopKFrequentElements
+import XCTest
 
 final class TopKFrequentElementsTests: XCTestCase {
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(TopKFrequentElements().text, "Hello, World!")
-    }
+	var sut: TopKFrequentElements!
+
+	override func setUp() {
+		super.setUp()
+		sut = TopKFrequentElements()
+	}
+
+	override func tearDown() {
+		sut = nil
+		super.tearDown()
+	}
+
+	func testExample() throws {
+		XCTAssertEqual(sut.topKFrequent([1, 1, 1, 2, 2, 3], 2), [1, 2])
+	}
+
+	func testExample2() {
+		XCTAssertEqual(sut.topKFrequent([1], 1), [1])
+	}
+
+	func testExample3() {
+		XCTAssertEqual(sut.topKFrequent([-1, -1], 1), [-1])
+	}
 }
