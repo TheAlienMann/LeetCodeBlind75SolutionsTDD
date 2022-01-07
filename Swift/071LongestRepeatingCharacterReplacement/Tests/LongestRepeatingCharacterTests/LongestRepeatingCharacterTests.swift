@@ -18,7 +18,12 @@ final class LongestRepeatingCharacterTests: XCTestCase {
 		XCTAssertEqual(sut.characterReplacement("ABAB", 2), 4)
 	}
 
+	func testExample2() {
+		XCTAssertEqual(sut.characterReplacement("AABABBA", 1), 4)
+	}
+
 	static var allTests = [
 		("testExample", testExample),
+		("testExample2", testExample2),
 	]
 }
