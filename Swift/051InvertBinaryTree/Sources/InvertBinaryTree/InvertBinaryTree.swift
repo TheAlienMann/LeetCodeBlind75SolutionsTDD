@@ -1,5 +1,23 @@
 import Foundation
 
+class InvertBinaryTree {
+	func invertTree(_ root: TreeNode?) -> TreeNode? {
+		guard let root = root else { return nil }
+		(root.left, root.right) = (invertTree(root.right), invertTree(root.left))
+
+		return root
+
+		// guard root != nil else { return nil }
+		// let temp = root!.left
+		// root!.left = root!.right
+		// root!.right = temp
+
+		// invertTree(root!.left)
+		// invertTree(root!.right)
+		// return root
+	}
+}
+
 public class TreeNode {
 	public var val: Int
 	public var left: TreeNode?
@@ -24,15 +42,5 @@ public class TreeNode {
 		self.val = val
 		self.left = left
 		self.right = right
-	}
-}
-
-class InvertBinaryTree {
-	func invertTree(_ root: TreeNode?) -> TreeNode? {
-		guard root != nil else { return nil }
-
-		// got stuff to work one, will be back soon :/
-
-		return nil
 	}
 }
