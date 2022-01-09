@@ -11,7 +11,7 @@ class MinimumWindowSubstring {
 		for chr in str2Data! {
 			countsStr2Data[chr, default: 0] += 1
 		}
-		var countsHave = 0, countsNeed = str2Data!.count
+		var countsHave = 0, countsNeed = countsStr2Data.count
 		var result = (-1, -1), resultLength = Int.max
 		var left = 0
 
