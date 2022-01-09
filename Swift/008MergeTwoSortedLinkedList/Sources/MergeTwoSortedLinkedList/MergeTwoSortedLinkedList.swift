@@ -9,9 +9,10 @@ public class ListNode {
 }
 
 class MergeTwoSortedLinkedList {
-	func mergeTwoLists(_ list1: inout ListNode?, _ list2: inout ListNode?) -> ListNode? {
+	func mergeTwoLists(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {
 		let dummyNode = ListNode(0)
 		var tail = dummyNode
+		var list1 = list1, list2 = list2
 
 		while list1 != nil, list2 != nil {
 			if list1!.val < list2!.val {
