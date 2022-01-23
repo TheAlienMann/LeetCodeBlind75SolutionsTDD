@@ -3,6 +3,5 @@
 
 class Validanagram {
 public:
-  void hello();
-  bool isAnagram(string str1, string str2);
+  bool isAnagram(const string& str1, const string& str2);
 };
