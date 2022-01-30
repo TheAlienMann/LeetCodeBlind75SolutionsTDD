@@ -10,3 +10,6 @@ For instace, in [Two Sum](https://github.com/TheAlienMann/LeetCodeBlind75Solutio
 
 Always check for **early Exit**, like the saying says: Early bird gets the worm!\
 it's better you get out of the process if you know the given input doesn't meet your criteria.
+
+
+## Two of the problems are still remaining, `"Alien Dictionary"` and `"Find the Median"`.
