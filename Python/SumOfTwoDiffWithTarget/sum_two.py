@@ -15,5 +15,6 @@ def sum_two(arr, target):
     return (arr[index_i], arr[index_j])
 
 arr = sorted([1, 6, -2, 4, 7, 8, 3])
+print(arr)
 result = sum_two(arr, target= 2)
 print(result)

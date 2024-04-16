@@ -1,0 +1,17 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -DCMAKE_PROJECT_TOP_LEVEL_INCLUDES=conan_provider.cmake -G Ninja -S /Users/mohamadrahmani/Developer/LeetCodeBlind75SolutionsTDD/C++/001TwoSum/TwoSum -B /Users/mohamadrahmani/Developer/LeetCodeBlind75SolutionsTDD/C++/001TwoSum/TwoSum/cmake-build-debug
+CMake Warning at tests/CMakeLists.txt:10 (message):
+  THE FILE CONANBUILDINFO.CAMAKE DOESN'T EXIST, YOU HAVE TO RUN CONAN INSTALL
+  FIRST.
+
+
+CMake Warning at conan_provider.cmake:604 (message):
+  Conan is correctly configured as dependency provider, but Conan has not
+  been invoked.  Please add at least one call to `find_package()`.
+Call Stack (most recent call first):
+  conan_provider.cmake:619 (conan_provide_dependency_check)
+  CMakeLists.txt:DEFERRED
+
+
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/mohamadrahmani/Developer/LeetCodeBlind75SolutionsTDD/C++/001TwoSum/TwoSum/cmake-build-debug
